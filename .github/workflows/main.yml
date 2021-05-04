@@ -1,10 +1,6 @@
 name: Datalab
 
-on:
-  push:
-    branches: [ datalab ]
-  pull_request:
-    branches: [ datalab ]
+on: [push, pull_request]
 
 jobs:
   hello_world_job:
