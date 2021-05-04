@@ -2,15 +2,15 @@
 name: 'Datalab Action'
 description: 'That so'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  target:  # id of input
+    description: 'Que correr del make'
     required: true
-    default: 'World'
+    default: 'test'
 outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+  result: # id of output
+    description: 'El resultado'
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.who-to-greet }}
+    - ${{ inputs.target }}
