@@ -5,11 +5,11 @@ on: [push, pull_request]
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: Datalab
     steps:
     - name: Hello world action step
       id: hello
-      uses: pamoreno/datalab-action@v2
+      uses: pamoreno/datalab-action@v1
       with:
         who-to-greet: 'Mona the Octocat'
     # Use the output from the `hello` step
